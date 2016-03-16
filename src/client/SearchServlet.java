@@ -28,6 +28,13 @@ public class SearchServlet extends HttpServlet
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		request.getRequestDispatcher("index.html").include(request, response);
+
+		String searchCriteria = request.getParameter("searchCriteria");
+		String searchType = request.getParameter("searchType");
+
+		out.print(searchCriteria);
+		out.print(searchType);
+		out.close();
 	}
 
 }
