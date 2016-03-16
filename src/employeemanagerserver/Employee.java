@@ -1,6 +1,6 @@
-package employeemanager;
+package employeemanagerserver;
 
-public class Employee
+public class Employee extends Person
 {
 	int salary;
 	String jobTitle;
@@ -28,6 +28,7 @@ public class Employee
 	@Override
 	public String toString()
 	{
-		return super.toString();
+		return "Employee [salary=" + salary + ", jobTitle=" + jobTitle + "]";
 	}
+
 }
